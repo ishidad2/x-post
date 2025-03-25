@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>X投稿ページ</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f7f9fa;
+        }
+        .container {
+            background-color: white;
+            border-radius: 15px;
+            padding: 20px;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            color: #1DA1F2;
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+        .event-details {
+            background-color: #f8f9fa;
+            border-radius: 12px;
+            padding: 15px;
+            margin-bottom: 20px;
+            border: 1px solid #ebeef0;
+        }
+        .event-details h2 {
+            font-size: 18px;
+            margin-top: 0;
+            margin-bottom: 10px;
+            color: #0f1419;
+        }
+        .event-details p {
+            margin: 8px 0;
+            line-height: 1.5;
+            color: #536471;
+        }
+        .event-details a {
+            color: #1DA1F2;
+            text-decoration: none;
+        }
+        .event-details a:hover {
+            text-decoration: underline;
+        }
+        .embedded-tweet {
+            border: 1px solid #ebeef0;
+            border-radius: 12px;
+            padding: 12px;
+            margin-bottom: 15px;
+            background-color: white;
+        }
+        .embedded-tweet-header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 8px;
+        }
+        .embedded-tweet-avatar {
+            width: 48px;
+            height: 48px;
+            border-radius: 50%;
+            background-color: #ebeef0;
+            margin-right: 10px;
+        }
+        .embedded-tweet-name {
+            font-weight: bold;
+            color: #0f1419;
+        }
+        .embedded-tweet-username {
+            color: #536471;
+            margin-left: 5px;
+        }
+        .embedded-tweet-content {
+            line-height: 1.5;
+            margin-bottom: 10px;
+            color: #0f1419;
+        }
+        .embedded-tweet-date {
+            color: #536471;
+            font-size: 14px;
+        }
+        .input-group {
+            margin-bottom: 15px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+            color: #536471;
+        }
+        textarea, input[type="text"] {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #cfd9de;
+            border-radius: 8px;
+            font-size: 16px;
+            box-sizing: border-box;
+        }
+        textarea {
+            min-height: 120px;
+            resize: vertical;
+        }
+        input[type="text"] {
+            height: 45px;
+        }
+        .button {
+            background-color: #1DA1F2;
+            color: white;
+            border: none;
+            border-radius: 50px;
+            padding: 12px 24px;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background-color 0.2s;
+        }
+        .button:hover {
+            background-color: #1a91da;
+        }
+        .char-count {
+            text-align: right;
+            color: #536471;
+            font-size: 14px;
+            margin-top: 5px;
+        }
+        .error {
+            color: #e0245e;
+            font-size: 14px;
+            margin-top: 5px;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>X投稿ページ</h1>
+
+        <!-- イベント詳細 -->
+        <div class="event-details">
+            <h2>XYM Price Prediction Royale</h2>
+            <p>XYM Price Prediction Royaleは、指定された日時のZaif取引所1分足終値でのXYM価格を予想し、ぴったり予想をした参加者に賞金を授与するイベントです。(小数点第2位まで)</p>
+            <p>的中者全員で300XYMを等分配山分けします。(小数点以下は、切り捨て)</p>
+            <p><a href="https://drive.google.com/file/d/1F6ChF1duZmY-65uF8A788D3yfIpt1dHf/view" target="_blank">詳細はこちらのPDFをご覧ください</a></p>
+        </div>
+
+        <!-- 埋め込みツイート -->
+        <blockquote class="twitter-tweet"><p lang="ja" dir="ltr">さあ！やりますかっ😊✨<br>XYM Price Prediction Royale Vo.1略して、XYM PPR😂😂笑<br>参加方法は、リンクから確認してください✨<br>そんなにややこしくないと思いますが、エントリーに関する質問は、DMかコメントまでお願いします！<a href="https://t.co/eIWzgXHVkJ">https://t.co/eIWzgXHVkJ</a><a href="https://twitter.com/hashtag/Symbol?src=hash&amp;ref_src=twsrc%5Etfw">#Symbol</a> <a href="https://twitter.com/hashtag/XYM?src=hash&amp;ref_src=twsrc%5Etfw">#XYM</a> <a href="https://twitter.com/hashtag/XYMPricePredictionRoyale?src=hash&amp;ref_src=twsrc%5Etfw">#XYMPricePredictionRoyale</a> <a href="https://t.co/gmDed2aHs7">https://t.co/gmDed2aHs7</a></p>&mdash; 🌈ｻｶｼｮｳ@NA7Y552FUCVEBSNCGJBHIJ25KEWDYFEERHU4YNQ (@shooo04121) <a href="https://twitter.com/shooo04121/status/1903617502405591074?ref_src=twsrc%5Etfw">March 23, 2025</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+        <div class="input-group">
+            <label for="tweet-text">投稿内容</label>
+            <textarea id="tweet-text" placeholder="予想価格は
+〇.〇〇円
+
+アドレス
+xxxxxxxxxxxxxxxxx"></textarea>
+            <div class="char-count">0 / 100</div>
+            <div class="error" id="text-error">文字数制限を超えています</div>
+        </div>
+
+        <div class="input-group">
+            <label for="hashtags">ハッシュタグ（カンマ区切りで複数入力可能）</label>
+            <input type="text" id="hashtags" placeholder="例: XYMPricePredictionRoyale,Symbol,XYM" value="XYMPricePredictionRoyale,Symbol,XYM">
+        </div>
+
+        <div class="input-group">
+            <label for="quote-url">引用リツイートURL</label>
+            <input type="text" id="quote-url" placeholder="https://x.com/username/status/123456789" value="https://x.com/shooo04121/status/1903617502405591074">
+            <div class="error" id="url-error">有効なXのURLを入力してください</div>
+        </div>
+
+        <button id="post-button" class="button">投稿する</button>
+    </div>
+
+    <script>
+        // テキストエリアの文字数カウント
+        const tweetText = document.getElementById('tweet-text');
+        const charCount = document.querySelector('.char-count');
+        const textError = document.getElementById('text-error');
+        const quoteUrl = document.getElementById('quote-url');
+        const urlError = document.getElementById('url-error');
+        const postButton = document.getElementById('post-button');
+
+        tweetText.addEventListener('input', updateCharCount);
+        
+        // 初期ロード時にも文字数カウントを更新
+        updateCharCount();
+
+        function updateCharCount() {
+            const count = tweetText.value.length;
+            charCount.textContent = `${count} / 100`;
+
+            if (count > 100) {
+                charCount.style.color = '#e0245e';
+                textError.style.display = 'block';
+                postButton.disabled = true;
+            } else {
+                charCount.style.color = '#536471';
+                textError.style.display = 'none';
+                postButton.disabled = false;
+            }
+        }
+
+        // 投稿ボタンのクリックイベント
+        postButton.addEventListener('click', function() {
+            // ツイート内容を取得
+            const text = tweetText.value;
+            if (!text.trim()) {
+                alert('投稿内容を入力してください');
+                return;
+            }
+
+            // ハッシュタグを処理
+            const hashtagsInput = document.getElementById('hashtags').value;
+            let hashtags = '';
+
+            if (hashtagsInput.trim()) {
+                const tags = hashtagsInput.split(',').map(tag => tag.trim());
+                hashtags = tags.map(tag => tag.startsWith('#') ? tag : `#${tag}`).join(' ');
+            }
+
+            // 引用リツイートURLを検証
+            const quoteUrlValue = quoteUrl.value.trim();
+            let isValidUrl = true;
+
+            if (quoteUrlValue && !isTwitterUrl(quoteUrlValue)) {
+                urlError.style.display = 'block';
+                isValidUrl = false;
+                return;
+            } else {
+                urlError.style.display = 'none';
+            }
+
+            // Xの投稿URLを生成
+            let tweetContent = encodeURIComponent(text);
+            if (hashtags) {
+                tweetContent += encodeURIComponent(' ' + hashtags);
+            }
+
+            let tweetUrl = `https://x.com/intent/tweet?text=${tweetContent}`;
+
+            // 引用リツイートURLがある場合は追加
+            if (quoteUrlValue) {
+                tweetUrl += `&url=${encodeURIComponent(quoteUrlValue)}`;
+            }
+
+            // 新しいウィンドウでXの投稿画面を開く
+            window.open(tweetUrl, '_blank', 'width=550,height=420');
+        });
+
+        // XのURLかどうかを検証する関数
+        function isTwitterUrl(url) {
+            return /^https?:\/\/(www\.)?x\.com\/\w+\/status\/\d+/.test(url);
+        }
+    </script>
+</body>
+</html>
